@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+.header {
+    display: block;
+    background-color: rgb(112, 94, 128);
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+.input-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+.container {
+    text-align: center;
+}
+.input {
+    padding: 10px;
+    width: 400px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 10px rgb(120, 120, 255);
+    border: none;
+    cursor: pointer;
+}
+.button1 {
+    background-color: white;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 2px 2px 10px rgb(120, 120, 255);
+    cursor: pointer;
+    padding: 10px;
+}
+.task-list {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+.task-item {
+    display: block;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+.remove-button {
+    float: right;
+    background-color: rgb(159, 159, 221);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.task-text {
+    display: inline-block;
+    width: 70%;
+    vertical-align: middle;
+    word-wrap: break-word;
+}
+.task-text.strike {
+    text-decoration: line-through;
+}
+.task-item::before {
+    content: '*';
+    margin-right: 10px;
+}
