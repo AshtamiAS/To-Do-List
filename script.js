@@ -3,6 +3,7 @@ document.getElementById('addButton').addEventListener('click', function() {
     const taskList = document.getElementById('taskList');
     const taskValue = taskInput.value.trim();
     if (taskValue !== '') {
+        
         const newTaskItem = document.createElement('div');
         newTaskItem.className = 'task-item';
         const taskText = document.createElement('span');
@@ -24,5 +25,6 @@ document.getElementById('addButton').addEventListener('click', function() {
         taskInput.value = '';
     }else{
     alert("Please enter valid task")
+
     }
 });
